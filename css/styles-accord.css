@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-blue: #3498db; /* Azul */
+    --color-green: #2ecc71; /* Verde */
+    --color-blackgray: #5c5c5c; /* Gris oscuro */
+    --color-black: #000; /* Gris oscuro */
+    --color-white: #fff; /* Gris oscuro */
+    --color-orange-prim: #f3742f; /* Gris oscuro */
+    --color-pink-farmasi: #f95c6d;
+
+  }
+
+  .cont-accord{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: ;
+}
+
+.accordion {
+    border-radius: 5px;
+    border: 1px solid var(--color-dc);
+    padding: 4px 12px 4px 12px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: ;
+    border: 1px solid #efefef;
+
+}
+
+/*
+.accordion:nth-child(2){
+    margin-top: 16px;    
+}
+*/
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--color-primary);
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.accordion-header span {
+    max-width: 100%;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.accordion-body {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .3s;
+}
+
+.accordion-body.active {
+    height: 100%;
+    opacity: 1;
+    padding: 5px 0px;
+    cursor:auto;
+}
+
+.arrow {
+    transition: transform .2s linear;
+}
+
+.accordion:has(.active) .arrow {
+    transform: rotate(180deg);
+}
+.txt-info-acc{
+    margin: 0 16px;
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+    padding: 0;
+    background-color: ;
+}
+.mb {
+  margin-bottom: 16px;
+}
+
+
+@media(max-width: 700px) {
+    .accordion-header span {
+      
+        font-size: 17px;
+    
+    }
+
+    .txt-info-acc{
+        font-size: 15px;
+        margin: 0 8px;
+
+    }
+    
+}
+
+

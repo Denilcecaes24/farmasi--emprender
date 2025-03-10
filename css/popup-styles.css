@@ -1,0 +1,254 @@
+  /* Estilo para el popup */
+  #popup {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: -100%; /* Empuja el popup fuera de la pantalla al inicio */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    z-index: 1000;
+    justify-content: center;
+    align-items: start;
+    transition: top 0.5s ease, opacity 0.5s ease; /* Transición para deslizamiento y fade */
+    opacity: 0; /* Inicialmente invisible */
+    overflow-y: auto;
+
+}
+
+/* Estilo para el contenido del popup */
+.popup-content {
+    background-color: white;
+    padding: 24px 30px 24px 24px;
+    position: relative;
+    max-width: 650px;
+    width: 90%;
+    border-radius: 8px;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease; /* Transición para el fade */
+}
+
+/* Estilo para la "X" de cerrar */
+.close-btn {
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.close-btn:hover {
+    color: red;
+    font-weight: 800;
+}
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+form button:hover {
+    background-color: #218838;
+}
+
+
+/* estilos de popups internos */
+.link-politicas1{
+    cursor: pointer;
+}
+
+
+ /* Estilo para el popup */
+ #popup2 {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: -100%; /* Empuja el popup fuera de la pantalla al inicio */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease, opacity 0.5s ease; /* Transición para deslizamiento y fade */
+    opacity: 0; /* Inicialmente invisible */
+}
+
+/* Estilo para el contenido del popup */
+.popup-content2 {
+    background-color: white;
+    padding: 20px 0 20px 0;
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 8px;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease; /* Transición para el fade */
+}
+
+/* Estilo para la "X" de cerrar */
+.close-btn2 {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+
+/* Estilo para el popup */
+#popup3 {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: -100%; /* Empuja el popup fuera de la pantalla al inicio */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease, opacity 0.5s ease; /* Transición para deslizamiento y fade */
+    opacity: 0; /* Inicialmente invisible */
+}
+
+/* Estilo para el contenido del popup */
+.popup-content3 {
+    background-color: white;
+    padding: 20px 0 20px 0;
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 8px;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease; /* Transición para el fade */
+}
+
+/* Estilo para la "X" de cerrar */
+.close-btn3 {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+.close-btn2:hover {
+    color: #f95c6d;
+    font-weight: 800;
+}
+
+.txt-title-polit{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+}
+
+.cont-politicas{
+    width: 100%;
+    height: 300px;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: transparent;
+    overflow-y: scroll;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+
+ /* Personalizar el scrollbar */
+ .cont-politicas::-webkit-scrollbar {
+    width: 8px; /* Ancho del scroll */
+  }
+
+  .cont-politicas::-webkit-scrollbar-thumb {
+    background-color: #f95c6d; /* Color del pulgar (la parte que se arrastra) */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+
+  .cont-politicas::-webkit-scrollbar-track {
+    background-color: #e0e0e0; /* Color de fondo del área del scroll */
+    border-radius: 10px;
+  }
+
+  .btn-aceptar-polit{
+    display: block;
+    width: 90%;
+    height: auto;
+    color: white;
+    font-weight: 600;
+    background-color: #f95c6d;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 12px;
+  }
+
+  .btn-aceptar-polit:hover{
+   cursor: pointer;
+   background-color: #f86d7b;
+
+  }
+
+
+
+   /* Evitar que se mueva el contenido de la página cuando el popup está activo */
+   body.no-scroll {
+    overflow: hidden; /* Deshabilita el scroll del body */
+}
+
+/* estilos de texto de popup 2 */
+
+.txt-term-tit{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.txt-term-norm{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4b4b4b;
+    text-align: start;
+}
+
+
+@media(max-width: 700px) {
+
+
+/* Estilo para el contenido del popup */
+.popup-content {
+    background-color: white;
+    padding: 24px 10px 24px 10px;
+    position: relative;
+    width: 95%;
+    border-radius: 8px;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease; /* Transición para el fade */
+}
+
+}

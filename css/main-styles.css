@@ -1,0 +1,1683 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+    --color-blue: #3498db; /* Azul */
+    --color-green: #2ecc71; /* Verde */
+    --color-blackgray: #5c5c5c; /* Gris oscuro */
+    --color-black: #000; /* Gris oscuro */
+    --color-white: #fff; /* Gris oscuro */
+    --color-orange-prim: #f3742f; /* Gris oscuro */
+    --color-pink-farmasi: #f95c6d;
+
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+#backToTopBtn {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Fijo en la ventana */
+  bottom: 15px; /* Posición desde el fondo */
+  right: 15px; /* Posición desde la derecha */
+  z-index: 50; /* Asegúrate de que esté en frente */
+  width: 50px; /* Ancho del botón */
+  height: 50px; /* Altura del botón */
+  border: none; /* Sin borde */
+  outline: none; /* Sin contorno */
+  background-color: #5050507b; /* Color de fondo */
+  color: white; /* Color del texto */
+  cursor: pointer; /* Cursor de puntero */
+  border-radius: 50%; /* Bordes redondeados para hacerlo circular */
+  display: flex; /* Flexbox para centrar el contenido */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  padding-top: 8px;
+}
+
+#backToTopBtn:hover {
+  background-color: #8b8b8b; /* Cambio de color al pasar el ratón */
+}
+
+#backToTopBtn::before {
+  content: ""; /* Contenido vacío */
+  border: solid white; /* Bordes sólidos blancos */
+  border-width: 0 4px 4px 0; /* Ajuste de los bordes para crear la flecha */
+  display: inline-block; /* Mostrar en línea */
+  padding: 8px; /* Tamaño de la flecha */
+  transform: rotate(-135deg); /* Rotar para crear la flecha */
+  -webkit-transform: rotate(-135deg); /* Rotar para Safari */
+}
+
+
+
+.subtitles-page{
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+}
+
+
+.my-50{
+    margin: 50px 0;
+  }
+
+  .mto-50{
+    margin-top: 50px;
+  }
+
+  .mto-30{
+    margin-top: 30px;
+  }
+
+  .mto-20{
+    margin-top: 20px;
+  }
+
+  .mto-16{
+    margin-top: 16px;
+  }
+
+  .mto-10{
+    margin-top: 10px;
+  }
+  .mbo-50{
+    margin-bottom: 50px;
+  }
+
+  .mbo-30{
+    margin-bottom: 30px;
+  }
+
+  .mbo-20{
+    margin-bottom: 20px;
+  }
+
+  .mbo-16{
+    margin-bottom: 16px;
+  }
+  .mbo-10{
+    margin-bottom: 10px;
+  }
+
+  .txt-norm{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-blackgray);
+  }
+
+  .fw-300{
+    font-weight: 300;
+  }
+
+  .fw-400{
+    font-weight: 400;
+  }
+
+  .fw-500{
+    font-weight: 500;
+  }
+
+  .fw-600{
+    font-weight: 600;
+  }
+
+  .fw-800{
+    font-weight: 800;
+  }
+
+  .fsz-12{
+    font-size: 12px;
+  }
+
+  .fsz-14{
+    font-size: 14px;
+  }
+
+  .fsz-16{
+    font-size: 16px;
+  }
+
+  .fsz-18{
+    font-size: 18px;
+  }
+
+  .fsz-20{
+    font-size: 20px;
+  }
+
+  .fsz-22{
+    font-size: 22px;
+  }
+
+  .fsz-24{
+    font-size: 24px;
+  }
+
+  .clr-black{
+    color: var(--color-black);
+  }
+
+  .clr-blackgray{
+    color: var(--color-blackgray);
+  }
+
+  .clr-white{
+    color: var(--color-white);
+  }
+
+  .clr-pink{
+    color: var(--color-pink-farmasi);
+  }
+
+  .txt-centerr{
+    text-align: center;
+  }
+
+/*primer seccion */
+
+.sect-tabs-ve{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: ;
+}
+
+.main-cont-page{
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    background-color: ;
+}
+
+
+
+/* estilos de las pestañas */
+
+.sect-main-btns{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: ;
+  }
+
+  h1{
+    margin: 0 0 16px 0;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+  }
+
+  .tabs-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    background-color: ;
+}
+
+.tab-btn {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    color: var(--color-black);
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+
+  }
+
+  .tab-btn:nth-child(1) {
+   margin-right: 16px;
+
+
+  }
+
+  .tab-btn .box-img-vender{
+    width: 33%;
+    max-width: 200px;
+    height: auto;
+    padding: 0;
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tab-btn .box-img-vender img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+  }
+
+  .tab-btn .box-txt-vender{
+    width: 66%;
+    max-width: 400px;
+    height: auto;
+    padding: 16px;
+    margin: 0 0 0 0;
+   
+  }
+
+  .tab-btn .box-txt-vender .box-title-btn{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .tab-btn .box-txt-vender .part-icon-ve {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0 10px 0 0;
+    background-color: ;
+  }
+
+  .tab-btn .box-txt-vender .part-icon-ve i{
+    font-size: 36px;
+  }
+
+  .tab-btn .box-txt-vender .part-title-ve{
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0 0 0 0;
+    background-color: ;
+
+  }
+
+  .tab-btn .box-txt-vender .btn-title{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tab-btn .box-txt-vender .btn-info{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .tab-btn:hover {
+    background-color: var(--color-pink-farmasi);
+    color: var(--color-white);
+  }
+
+
+  .active-tabb {
+    background-color: var(--color-pink-farmasi);
+    color: white;
+  }
+
+
+  .active-tabb .box-title-btn .part-icon-ve i{
+    color: white;
+  }
+
+  /* estilos de info sec 2 */
+
+  .info-tabs-container{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border-radius: 5px;
+    background-color: ;
+}
+
+.sect-tabs-ve2{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: block;
+  }
+
+  .sect-tabs-ve3{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: block;
+  }
+
+  .sect-sliders-tel{
+    display: none;
+  }
+
+.tab-content2 {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  
+  .active-content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: ;
+  }
+
+  .info-option{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    overflow: hidden;
+    /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);*/
+  }
+
+  .box-img-opt{
+    width: 20%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-img-opt img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .box-txt-opt{
+    width: 80%;
+    height: auto;
+    padding: 16px;
+    margin: 0 0 0 0;
+  }
+
+
+  .box-txt-opt .btn-title2{
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    color: var(--color-pink-farmasi);
+  }
+
+  .box-txt-opt .btn-info2{
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 0 8px 0;
+    color: var(--color-blackgray);
+  }
+
+  .box-txt-opt .btn_btn{
+    color: #fff;
+    background-color: black;
+    margin: 8px 0 0 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+font-size: 17px;
+font-weight: 400;
+  }
+
+
+  .sect-sliders-tel{
+    display: none;
+  }
+
+   /* estilos del sliders de telefono */
+
+   .sect-sliders-tel{
+    display: none;
+  }
+
+  .cont-botones-opc{
+    width: 100%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .cont-botones-opc .div-desliz{
+    width: 0px;
+    margin: 0 10px 0 0;
+  }
+
+  .cont-botones-opc .div-desliz img{
+    width: 100%;
+  }
+
+
+  .cont-botones-opc .tabbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  .cont-botones-opc .tabbs div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .cont-botones-opc .tabbs div .tabb {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    margin: 0 16px;
+    white-space: nowrap;
+    background-color: #faa1a785;
+  }
+
+  .cont-botones-opc .notabb {
+    width: 10px;
+    height: auto;
+  
+  }
+
+  .cont-botones-opc .notabb img{
+    display: block;
+    width: 10px;
+    height: auto;
+    object-fit: cover;
+  
+  }
+
+  .cont-botones-opc .tabbs div .tabb .txt-tabs-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin: 0 auto;
+  }
+
+  .cont-botones-opc .tabbs div .active-tabb {
+    background-color: var(--color-pink-farmasi);
+  }
+
+  .cont-botones-opc .tabbs .active-tabb .txt-tabs-title{
+ 
+    color: #fff;
+  }
+
+  .cont-contenido{
+    width: 100%;
+    height: auto;
+    margin: 20px 0 0 0;
+    padding: 16px;
+    background-color: ;
+    border-radius: 15px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+}
+
+.cont-contenido .tab-contentt {
+  margin: 0 0 0 0;
+  padding: 16px 0;
+  display: none;
+}
+
+.cont-contenido .active-contentt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: ;
+}
+
+.title-slidersss{
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin: 0 10px 10px 10px;
+}
+
+.vent-ben-cont{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: ;
+
+  }
+
+  .sldr-test-cont{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: ;
+    position: relative;
+    z-index: 0;
+    display: block;
+
+  }
+
+  .sldr-test-cont2{
+  
+    display: none;
+  }
+
+
+  
+  /* estilos de parallax */
+
+  .parallax-container {
+    width: 100%;
+    position: relative;
+    background-image: url('../img/portada-farmasi.jpg'); /* Aquí va tu imagen de fondo */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto; /* Ajusta la altura según sea necesario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .main-cont-par{
+    width: 95%;
+    max-width: 1200px;
+    height: auto;
+    padding: 16px;
+    margin: 30px auto;
+    background-color: #fafafac5;
+    border-radius: 15px;
+  }
+
+  .cont-req-pas{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .cont-rp1{
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0 16px 0 0;
+  }
+
+  .cont-rp2{
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 0 0;
+  }
+  
+  /*
+  
+  .box-req-pas-i{
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    border: 1px gray solid;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+
+  }
+
+  .box-req-pas-i:nth-child(3){
+    margin: 16px 0;
+   
+  }
+  
+  */
+  
+  .box-req-pas-i{
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    border: 1px gray solid;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+    margin-bottom: 16px;
+
+  }
+
+  .box-req-pas-i:nth-child(6){
+    margin: 0 0;
+   
+  }
+
+/*
+  .box-req-pas{
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    border: 1px gray solid;
+    text-align: start;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+
+  }
+
+  .box-req-pas:nth-child(3){   
+    margin: 16px 0;
+  }
+ */
+ 
+  .box-req-pas{
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    border: 1px gray solid;
+    text-align: start;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+    margin-bottom: 16px;
+
+  }
+
+  .box-req-pas:nth-child(5){   
+    margin: 0 0;
+  }
+
+  .req-ico{
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0 10px 0 0;
+
+  }
+
+  .req-ico i{
+    color: var(--color-pink-farmasi);
+    font-size: 24px;
+
+  }
+
+  .req-txt{
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0 0 0 0;
+    text-align: start;
+  }
+
+  .cont-contenido{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .boton-registro{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    margin: 16px 0;
+    padding: 0;
+  }
+
+  .boton-registro .estilos-boton-reg{
+    display:inline-block;
+    width: auto;
+    height: auto;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #f95c6d;
+    border-radius: 5px;
+    border: 0;
+  }
+
+
+  .boton-registro .estilos-boton-reg:hover{
+   cursor: pointer;
+  }
+
+
+  /*estilos de video de youtube */
+
+  .cont-video-farm {
+    position: relative;
+    width: 70%;
+    padding-bottom: 39.45%; /* Relación de aspecto 16:9 (altura 56.25% del ancho) */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    margin: 0 0 70px 0;
+
+  }
+  
+  /* Estilo para el iframe de YouTube */
+  .cont-video-farm iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+/* esttilos de la primer seccion con efecto parallax */
+.sect-tabs-ve-par {
+  width: 100%;
+  position: relative;
+  background-image: url('../img/portada-farmasi.jpg'); /* Aquí va tu imagen de fondo */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto; /* Ajusta la altura según sea necesario */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main-cont-par1{
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  padding: 16px;
+  margin: 30px auto;
+  background-color: #fafafac5;
+  border-radius: 15px;
+}
+
+/* estilos de las pestañas */
+
+.sect-main-btns{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: ;
+}
+
+h1{
+  margin: 0 0 16px 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+.tabs-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  background-color: ;
+}
+
+.tab-btn {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  color: var(--color-black);
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.tab-btn:nth-child(1) {
+ margin-right: 16px;
+
+
+}
+
+.tab-btn:hover {
+  background-color: var(--color-pink-farmasi);
+  color: var(--color-white);
+}
+
+.active-tabb {
+  background-color: var(--color-pink-farmasi);
+  color: white;
+}
+
+.box-title-btn{
+  width: 100%;
+  height: auto;
+  background-color: ;
+  padding: 8px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.part-icon-ve {
+  width: 15%;
+  height: auto;
+  background-color: ;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.part-icon-ve i{
+  font-size: 32px;
+}
+
+.part-title-ve{
+  width: 85%;
+  height: auto;
+  background-color: ;
+  padding: 0;
+  margin: 0;
+}
+
+.part-title-ve p{
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-content2 {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.active-content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: ;
+}
+
+/* estilos de video y texto cont1 */
+
+.cont-video-txt{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  background-color: ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.cont-video-txt .box-video-yt {
+  position: relative;
+  width: 50%;
+  max-width: 600px;
+  padding: 0;
+  margin: 0 16px 0 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+
+/* Estilo para el iframe de YouTube */
+.cont-video-txt .box-video-yt .video1-yt {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.cont-video-txt .box-txt-info-tab {
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: ;
+}
+
+.title-tab1{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-pink-farmasi);
+  padding: 0;
+  margin: 0;
+
+}
+
+.txt-info-tab1{
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--color-black);
+  padding: 0;
+  margin: 0;
+}
+
+.btn-tab1{
+  width: auto;
+  height: auto;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  margin: 10px 0 0 0;
+  text-decoration: none;
+display: inline-block;
+}
+
+/* estilos de catalogo */
+
+.catal-cont{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background-color: ;
+}
+
+.subcont-rest2-5{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 16px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-catalogo-info{
+  width: 45%;
+  max-width: 540px;
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+}
+
+/*
+.box-catalogo-info:first-child{
+ margin-right: 16px;
+}
+ */
+
+.box-catalogo-info2{
+  width: 90%;
+  max-width:600px;
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: start;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+}
+
+.part-img-cat{
+  width: 40%;
+  height: auto;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+.part-img-cat img{
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+}
+
+.part-txt-cat{
+  width: 60%;
+  height: auto;
+  padding: 16px;
+  margin: 0;
+}
+
+.txt-tit-cat{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-pink-farmasi);
+  padding: 0;
+}
+
+.txt-ciclo-cat{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-black);
+  padding: 0;
+}
+
+.txt-inicio-cat{
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-blackgray);
+  padding: 0;
+}
+
+.txt-termino-cat{
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-blackgray);
+  padding: 0;
+}
+
+.txt-cat-end{
+  text-align: end;
+}
+
+.txt-cat-start{
+  text-align: start;
+}
+
+.btn-consulta-cat{
+  display: inline-block;
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  background-color: var(--color-pink-farmasi);
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.desap-icon1-1{
+  display: none;
+}
+
+.desap-icon1-2{
+  display: inline-block;
+}
+
+.desap-icon2-1{
+  display: inline-block;
+}
+
+.desap-icon2-2{
+  display: none;
+}
+
+
+  @media(max-width: 700px) {
+
+    .my-50{
+      margin: 30px 0;
+    }
+
+    .mbo-50{
+      margin-bottom: 30px;
+    }
+
+    .mto-50{
+      margin-top: 30px;
+    }
+
+  h1{
+    
+      font-size: 28px;
+   
+    }
+
+    .subtitles-page{
+        font-size: 24px;
+        line-height: 1.2;
+      }
+
+    /* esttilos de las opciones de vender/emprender */
+
+    .tabs-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        padding: 16px 0;
+  }
+  
+  .tab-btn:nth-child(1) {
+    margin-right: 10px;
+   }
+  
+  .tab-btn {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+  
+  .tab-btn:first-child {
+  margin-bottom: 0;
+  
+  }
+  
+  .tab-btn .box-img-vender{
+   display: none;
+  }
+  
+  .tab-btn .box-img-vender img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  
+  }
+  
+  .tab-btn .box-txt-vender{
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 0;
+  }
+  
+  .tab-btn .box-txt-vender .btn-title{
+    font-size: 17px;
+   
+  }
+  
+  .tab-btn .box-txt-vender .btn-info{
+    display: none;
+  }
+  
+  
+  .tab-btn:hover {
+    background-color: var(--color-pink-farmasi);
+    color: var(--color-white);
+  }
+  
+  
+  .active-tabb {
+    background-color: var(--color-pink-farmasi);
+  }
+
+  .cont-botones-opc .tabbs div .active-tabb {
+    background-color: var(--color-pink-farmasi);
+  }
+
+  .cont-botones-opc .tabbs .active-tabb .txt-tabs-title{
+ 
+    color: #fff;
+  }
+  
+  /* estilos de seccion 2 */
+  .info-option{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+
+  .box-img-opt{
+    width: 40%;
+    height: auto;
+    margin: 0 0 0 0;
+  }
+
+  .box-img-opt img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+  }
+
+  .box-txt-opt{
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 0;
+    padding: 10px;
+  }
+
+
+  .box-txt-opt .btn-title2{
+    font-size: 22px;
+  
+  }
+
+  .box-txt-opt .btn-info2{
+    font-size: 17px;
+   
+  }
+
+  .box-txt-opt .btn_btn{
+    font-size: 17px;
+  }
+
+
+
+  /* slider grandes */
+
+  .sect-tabs-ve2{
+
+    display: none;
+  }
+  
+  .sect-sliders-tel{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: ;
+  }
+
+  .sldr-test-cont{
+
+    display: none;
+  
+  }
+  
+  .sldr-test-cont2{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: ;
+    position: relative;
+    z-index: 0;
+    display: block;
+  }
+
+
+
+
+  .subtitles-page{
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  
+  .cont-req-pas{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .cont-rp1{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 16px 0;
+  }
+  
+  .cont-rp2{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 0 0;
+  }
+
+   /*estilos de video de youtube */
+
+   .cont-video-farm {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 (altura 56.25% del ancho) */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    margin: 0 0 16px 0;
+  }
+  
+  /* Estilo para el iframe de YouTube */
+  .cont-video-farm iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  .cont-video-txt{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .cont-video-txt .box-video-yt {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin: 0 0 16px 0;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  
+  /* Estilo para el iframe de YouTube */
+  .cont-video-txt .box-video-yt .video1-yt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cont-video-txt .box-txt-info-tab {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: ;
+  }
+
+  /* estilos de catalogo */
+
+  .subcont-rest2-5{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 16px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-catalogo-info{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+}
+
+.box-catalogo-info:first-child{
+   margin-right: 0;
+   margin-bottom: 16px;
+}
+
+.box-catalogo-info2{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: start;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+}
+
+
+.txt-tit-cat{
+    font-size: 20px;
+   
+}
+
+.txt-ciclo-cat{
+    font-size: 18px;
+   
+}
+
+.txt-inicio-cat{
+    font-size: 16px;
+   
+}
+
+.txt-termino-cat{
+    font-size: 16px;
+   
+}
+
+.txt-cat-end{
+    text-align: end;
+}
+
+.txt-cat-start{
+    text-align: start;
+}
+
+.btn-consulta-cat{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: var(--color-pink-farmasi);
+}
+
+.desap-icon1-1{
+    display: none;
+}
+
+.desap-icon1-2{
+    display: inline-block;
+}
+
+.desap-icon2-1{
+    display: inline-block;
+}
+
+.desap-icon2-2{
+    display: none;
+}
+
+
+  }
+
+  @media(max-width: 500px) {
+
+     /* estilos de catalogos */
+
+      .subcont-rest2-5{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 16px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box-catalogo-info{
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+      }
+
+      .box-catalogo-info:first-child{
+      margin-right: 0;
+      margin-bottom: 16px;
+      }
+
+      .box-catalogo-info2{
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+      }
+
+      .part-img-cat{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0 0 0 0;
+      }
+
+      .part-img-cat img{
+        display: block;
+        width: 80%;
+        height: auto;
+        padding: 0;
+        margin: 0 auto;
+        object-fit: cover;
+      }
+
+      .part-txt-cat{
+        width: 100%;
+        height: auto;
+        padding: 16px 0 0 0;
+        margin: 0;
+      }
+
+      .txt-tit-cat{
+        font-size: 20px;
+      
+      }
+
+      .txt-ciclo-cat{
+        font-size: 18px;
+      
+      }
+
+      .txt-inicio-cat{
+        font-size: 16px;
+      
+      }
+
+      .txt-termino-cat{
+        font-size: 16px;
+      
+      }
+
+      .txt-cat-end{
+        text-align: center;
+      }
+
+      .txt-cat-start{
+        text-align: center;
+      }
+
+      .btn-consulta-cat{
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        background-color: var(--color-pink-farmasi);
+      }
+
+      .desap-icon1-1{
+        display: inline-block;
+      }
+
+      .desap-icon1-2{
+        display: none;
+      }
+
+      .desap-icon2-1{
+        display: inline-block;
+      }
+
+      .desap-icon2-2{
+        display: none;
+      }
+  }

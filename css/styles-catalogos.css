@@ -1,0 +1,206 @@
+:root {
+    --color-blue: #3498db; /* Azul */
+    --color-green: #2ecc71; /* Verde */
+    --color-blackgray: #5c5c5c; /* Gris oscuro */
+    --color-black: #000; /* Gris oscuro */
+    --color-white: #fff; /* Gris oscuro */
+    --color-orange-prim: #f3742f; /* Gris oscuro */
+    --color-pink-farmasi: #f95c6d;
+
+  }
+
+  .sect-princ-cat{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 50px 0;
+  }
+
+  .cont-princ-cat{
+    width: 90%;
+    max-width: 1200px;
+    background-color:;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .titulo-princ-cat{
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--color-pink-farmasi);
+    padding: 0;
+    text-align: center;
+  }
+
+  .txt-princ-cat{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-black);
+    padding: 0;
+    text-align: center;
+  }
+
+  .subtit-cat{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--color-pink-farmasi);
+    padding: 0;
+    text-align: center;
+  }
+
+  .txt-btn-desc{
+    text-align: center;
+  }
+
+  .btn-desc-cat{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 10px 12px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--color-pink-farmasi);
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .cont-catalogo{
+    width: 100%;
+    height: 70vh;
+    padding: 0;
+    background-color: ;
+
+  }
+
+  .catalogo-frame{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: ;
+    border: none;
+  }
+
+
+  .cont-inscr{
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    padding: 16px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 50px auto;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+  }
+
+  .cont-inscr-ind{
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    padding: 16px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 0 auto 50px auto;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+  }
+
+  .img-screen-farm{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 16px 0;
+    display: block;
+    object-fit: cover;
+  }
+
+  .txt-inscr{
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    padding: 0;
+    margin: 0 0 16px 0;
+    text-align: center;
+  }
+
+  .txt-btn-inscr{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .btn-inscr-reg{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 10px 12px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--color-pink-farmasi);
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .cont-princ-accord{
+    width: 90%;
+    max-width: 1200px;
+    background-color: ;
+    padding: 0;
+    margin: 50px auto;
+  }
+
+  @media (max-width: 700px) {
+
+    .sect-princ-cat{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 30px 0;
+      }
+
+      .titulo-princ-cat{
+        font-size: 36px;
+      }
+
+    .txt-princ-cat{
+        font-size: 18px;
+      }
+
+      .subtit-cat{
+        font-size: 24px;
+      }
+    
+      .btn-desc-cat{
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 10px 12px;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      .cont-catalogo{
+        width: 100%;
+        height: 30vh;
+        padding: 0;
+        background-color: ;
+    
+      }
+    
+      .catalogo-frame{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: ;
+        border: none;
+      }
+  }
